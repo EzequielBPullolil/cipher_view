@@ -10,6 +10,7 @@ import (
 
 func main() {
 	r := chi.NewRouter()
+	r.Handle("/static/*", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 	views := blocks.New("./src/views")
 	if err := views.Load(); err != nil {
 		log.Fatal(err)
