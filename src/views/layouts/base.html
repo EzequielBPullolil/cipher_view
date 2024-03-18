@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/output.css" rel="stylesheet">
+
+    <title>{{ if .Title }}{{ .Title }}{{ else }}Default Main Title{{ end }}</title>
+</head>
+
+<body>
+    <div class="bg-slate-950">hola hola</div>
+    {{template "content" .}}
+</body>
+
+</html>
