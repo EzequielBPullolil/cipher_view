@@ -1,2 +1,13 @@
-<h1>Index Body</h1>
-<div class="bg-slate-950">hola hola</div>
+<div class="flex justify-center items-center h-screen">
+    <div class="bg-slate-300 p-12 rounded-2xl">
+        <h1 class="text-lg">Insert secret password</h1>
+        <form action="/verify_password" method="post">
+            <input class="p-5 bg-slate-900 rounded-3xl rounded-r-none text-white" type="password" name="password"
+                placeholder="password..">
+            <input
+                class="p-5 bg-slate-200 rounded-3xl  rounded-l-none hover:bg-slate-500 hover:translate-x-1 transition delay-150 ease-in-out transition-colors "
+                type="submit" value="login">
+        </form>
+
+    </div>
+</div>
